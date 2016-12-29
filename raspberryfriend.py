@@ -19,6 +19,7 @@ radio.setPALevel(NRF24.PA_MAX)
 radio.setAutoAck(1)
 radio.openWritingPipe(pipes[0])
 radio.openReadingPipe(1, pipes[1])
+radio.enableDynamicPayloads();
 
 radio.startListening()
 radio.stopListening()
